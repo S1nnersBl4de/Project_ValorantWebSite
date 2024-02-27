@@ -1,0 +1,348 @@
+body,html{
+    margin:0px;
+    padding: 0px;
+    
+}
+body{
+    background-image: url(https://hernanosorio.co/wp-content/uploads/2022/03/Placeholder.png);
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.leftside{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    width: 50%;
+    height: 10vh;
+    background-color: rgb(30, 29, 29);
+}
+
+.elements {
+    display: flex;
+    gap: 20% 
+}
+
+
+.elements a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: uppercase;
+    font-family: "FF Mark W05", Arial, sans-serif;
+    position: relative; 
+    word-spacing: 10px;
+    
+}
+
+
+.elements a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 100%;
+    height: 4px; 
+    background-color: transparent;
+    transition: background-color 0.3s ease; 
+    border-radius: 2px; 
+}
+
+.elements a:hover::after {
+    background-color: red;
+}
+
+.riotlogoA:hover svg path {
+    fill: red;
+}
+.rightside{
+    width: 50%;
+    height: 10vh;
+    background-color: rgb(30, 29, 29);
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    
+}
+.ValorantLogo:hover svg path{
+    fill: red;
+}
+
+.playnowbutton a {
+    text-decoration: none;
+}
+
+.playnowbutton button {
+    line-height: 16px;
+    position: relative;
+    z-index: 0;
+    text-overflow: ellipsis;
+    height: 32px;
+    border-radius: 12px;
+    padding: 8px 16px;
+    color: #111;
+    background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none; 
+    cursor: pointer;
+    margin-right: 38px;
+}
+
+
+
+
+.placeholder7{
+    padding: 80px;
+    height: 40px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#containerA {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px; 
+    width: 800px; 
+    margin: 0 auto; 
+}
+
+@media(max-width: 820px){
+    #containerA{
+        width: 700px;
+    }
+
+}
+@media(max-width: 665px){
+    #containerA{
+        width: 400px;
+    }
+    .card{
+        width: 250px; 
+        height: 250px;
+    }
+}
+
+.insideContainer {
+    margin: 20px; 
+    flex-wrap: wrap;
+    
+}
+
+section.card {
+    width: 210px; 
+    height: 210px;
+    background-color: #290202;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; 
+    border-bottom: 1px solid #ccc; 
+    
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #000000;
+    background-color: #f2f2f2;
+    color: #ffffff;
+}
+  
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: transparent;
+    background-image: url('https://playvalorant.com/assets/images/agents-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    font-family: DINNextW05-Medium,arial,georgia,sans-serif;
+    color: #ece8e1;
+    margin: 0;
+    padding-left: 5px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+  .card__description {
+    margin: 10px 0 0;
+    color: #f9faf9;
+    font-weight: 400;
+    font-family: DINNextW1G,arial,georgia,sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+  
+
+
+.placeholder3 {
+    display: flex;
+    justify-content: center; 
+    padding: 10px; 
+    background-color: #292929;
+}
+
+.downloadPC,
+.downloadmobile {
+    padding: 0 10px; 
+}
+
+.downloadPC a,
+.downloadmobile a {
+    text-decoration: none;
+    color: rgb(110, 107, 107);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: .08em;
+    font-family: "FF Mark W05",Arial,sans-serif;
+}
+.downloadPC a:hover{
+    color: white;
+    transition: 0.5s;
+}
+.downloadmobile a:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0; 
+    background-color: #111;
+    padding-bottom: 85px;
+}
+
+.socialmediaicons {
+    margin-bottom: 20px; 
+    color: white;
+}
+.socialmediaicons a {
+    display: inline-block;
+    margin: 0 10px; 
+    font-size: 15px; 
+    color: #f9f8f8; 
+    background-color: rgba(128, 128, 128, 0.5); 
+    border-radius: 5px; 
+    padding: 5px;
+}
+.BothLogos {
+    display: flex;
+    justify-content: center;
+    gap: 5px; 
+    padding-top: 40px;
+}
+
+
+
+.riotlogoA2 svg {
+    width: 200px; 
+    height: auto; 
+}
+.valorantlogo{
+    width: 200px; 
+    height: auto; 
+    text-decoration: none;
+    color: white;
+
+}
+.GeneralInformation {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    width: 50%; 
+    margin: 0 auto; 
+    padding-top: 33px;
+}
+.GeneralInformation p{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 140%;
+    text-align: center;
+    word-break: keep-all;
+    color: #7e7e7e;
+}
+
+
+@media(max-width: 950px){
+    .elements{
+       display: none !important;
+    }
+   
+    .rightside{
+       display: flex;
+       align-items: center;
+       
+    }
+}
+
+.VALORANTABSOLUTE{
+        position: absolute;
+        top: 20%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+}
+.VALORANTABSOLUTE svg {
+    
+    width: 80% !important;
+    height: 40vh !important;
+}
+.VALORANTABSOLUTE svg path{
+    fill: rgba(128, 128, 128, 0.2);
+}
+.AllAgents{
+    margin-top: 70px;
+    padding: 0px;
+    color: #9e9b9b;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    font-family: "FF Mark W05", Arial, sans-serif;
+}
